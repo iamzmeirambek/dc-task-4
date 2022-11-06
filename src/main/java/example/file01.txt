@@ -1,0 +1,1050 @@
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
+What is a Sybil Attack?
+A Sybil attack uses a single node to operate many active fake identities (or Sybil identities) simultaneously, within a peer-to-peer network. This type of attack aims to undermine the authority or power in a reputable system by gaining the majority of influence in the network. The fake identities serve to provide this influence.
+
+A successful Sybil attack provides threat actors with the ability to perform unauthorized actions in the system. For example, it enables a single entity, such as a computer, to create and operate several identities, such as user accounts and IP address-based accounts. All of these fake identities, tricking systems and users into perceiving them as real.
+
+The name of this attack was inspired by a 1973 book called Sybil, a woman diagnosed with a dissociative identity disorder. In the context of attacks, the term was originally coined by Brian Zill, and initially discussed in a paper by John R. Douceur, both at Microsoft Research.
+
+What Problems Can Sybil Attacks Cause?
+Here are several problems a Sybil attack may cause:
+
+Block users from the network—a Sybil attack that creates enough identities enables threat actors to out-vote honest nodes and refuse to transmit or receive blocks.
+Carry out a 51% attack—a Sybil attack that enables one threat actor to control over half (51% or more) of a network’s total hash rate or computing power. This attack damages the integrity of a blockchain system and can potentially cause network disruption. A 51% attack can modify the order of transactions, reverse the actor’s transactions to enable double-spending, and prevent the confirmation of transactions.
+Sybil Attacks on a Blockchain Network: Two Scenarios
+The main goal of a Sybil attack on a blockchain network is to gain disproportionate influence over decisions made in the network. The attacker creates and controls several aliases to achieve this effect.
+
+Sybil attack on a Bitcoin network
+
+In a Bitcoin network, many decisions that affect operations are voted on. By voting, miners and those who maintain network nodes may or may not agree with a proposal. If attackers create multiple identities on the network, they can vote for as many identities as they control.
+
+Sybil attacks can also control the flow of information in a network. For example, a Bitcoin Sybil attack can be used to obtain information about the IP address of a user connecting to the network. This compromises the security, privacy and anonymity of web users. The only thing an attacker has to do is take control of nodes in the network, gather information from those nodes, and create fake nodes initiating their identities.
+
+Once they achieve dominance in the network, the attacker can implement censorship—blocking other users from legitimately using the network.
+
+Sybil attack on a Tor network
+
+The Tor network operates on a peer-to-peer model, allowing nodes to surf the Internet anonymously. However, a malicious or spying entity can take control of tens, hundreds, or thousands of nodes, compromising privacy of the network. When both ingress and egress nodes are controlled by attackers, they would be able to monitor network traffic of everyone transferring data via the compromised nodes.
+
+Sybil Attack Prevention
+Identity Validation
+Identity validation can help prevent Sybil attacks by revealing the true identity of hostile entities. Validation relies on a central authority that verifies the identity of entities in the network, and can perform reverse lookups. Identities can be validated either directly or indirectly:
+
+Direct validation means the local entity queries a central authority to validate identities of remote entities.
+Indirect validation means that the local entity relies on previously-accepted identities, so that others on the network “vouch” for the authenticity of a remote identity.
+Identity techniques can use several methods such as phone number verification, credit card verification, and IP address verification. These methods are not perfect and can be abused by attackers at a certain cost.
+
+Identity-based validation provides accountability but sacrifices the anonymity which is important for most types of peer-to-peer networks. It is still possible to preserve anonymity by avoiding reverse lookups, but this means that the validation authority could become a target for attack.
+
+Social Trust Graphs
+It is possible to prevent Sybil attacks by analyzing connectivity data in social graphs. This can limit the extent of damage by a specific Sybil attacker, while maintaining anonymity.
+
+There are several existing techniques, including SybilGuard, SybilLimit, and the Advogato Trust Metric. Another way to use social graphs to prevent attacks is computing a sparsity-based metric to identify suspected Sybil clusters in distributed systems.
+
+These techniques are not perfect, and rely on certain assumptions that may not be true for all real-world social networks. This means P2P networks that rely on social trust graph techniques can still be vulnerable to small-scale Sybil attacks.
+
+Economic Costs
+Economic costs can work as artificial barriers to entry that make a sybil attack much more expensive. For example, requiring investments in resources like stake or storage in existing cryptocurrency and implementing Proof of work (PoW).
+
+PoW requires each user to provide proof that they expended computational effort to solve a cryptographic puzzle. In permissionless cryptocurrencies like Bitcoin, miners compete to append blocks to a blockchain. They earn rewards approximately in proportion to the amount of computational effort they have invested during a certain time.
+
+Personhood Validation
+P2P networks can require identity verification and instate a “one entity per person” rule. A validation authority can use a mechanism that does not require knowing the real identity of participants. For example, users can verify their identity by being present at a certain time and place (this is known as a pseudonym party).
+
+This type of proof of personhood is a promising way to validate identities in permissionless blockchain and cryptocurrency networks. They could maintain anonymity while ensuring each human participant has exactly one vote.
+
+Application-specific Defenses
+Several distributed protocols have been developed that have inherent protection against Sybil attacks. These include:
+
+SumUp and DSybil—online content recommendation and voting algorithms that are Sybil resistant.
+Whānau—a distributed hash table algorithm with built-in Sybil protection.
+Kademlia—the I2P implementation of this protocol can mitigate Sybil attacks.
+Sybil Attack Prevention with Imperva
+Imperva provides several security technologies that can protect blockchain and cryptocurrency investments:
+
+Web Application Firewall (WAF)—analyzes user access to web applications, including blockchain and cryptocurrency applications, and protects them from cyber attacks. It protects against all web application attacks, blocks malicious bots, and can help validate authenticity of user requests.
+DDoS protection—protects cryptocurrency exchange and foundation sites, such as Electroneum and Bitcoin Gold. The service provides an SLA-backed guarantee to detect and block attacks in under 3 seconds.
+Advanced Bot Protection prevents business logic attacks from all access points – websites, mobile apps and APIs. The Account Takeover module provides login protection with no added latency and minimal user disruption.
+Beyond P2P network protection, Imperva provides comprehensive protection for applications, APIs, and microservices:
+
+Runtime Application Self-Protection (RASP)—Real-time attack detection and prevention from your application runtime environment goes wherever your applications go. Stop external attacks and injections and reduce your vulnerability backlog.
+
+API Security—Automated API protection ensures your API endpoints are protected as they are published, shielding your applications from exploitation.
+
+Attack Analytics—Ensures complete visibility with machine learning and domain expertise across the application security stack to reveal patterns in the noise and detect application attacks, enabling you to isolate and prevent attack campaigns.
+
+Client-Side Protection—Gain visibility and control over third-party JavaScript code to reduce the risk of supply chain fraud, prevent data breaches, and client-side attacks.
